@@ -24,6 +24,7 @@ let count = 0;
 
 function goForward() {
     forward.disabled = true;
+    backward.disabled = true;
     count += 1;
     if (count > imageList.length - 1){
         count = 0;
@@ -32,8 +33,8 @@ function goForward() {
     displayer2.style.display = "block";
     displayer2.style.position = "absolute";
 
-    displayer.style.animation = "imageMove 2s forwards";
-    displayer2.style.animation = "imageMove2 2s forwards"; 
+    displayer.style.animation = "imageMove 1.5s forwards";
+    displayer2.style.animation = "imageMove2 1.5s forwards"; 
     setTimeout(() => {
         displayer.style.animation = "none";
         displayer.src = displayer2.src;
@@ -41,12 +42,14 @@ function goForward() {
         displayer2.style.animation = "none";
 
         forward.disabled = false;
-    }, 2000) 
+        backward.disabled = false;
+    }, 1350) 
     
 
 }
 
 function goBackward() {
+    forward.disabled = true;
     backward.disabled = true;
     count -= 1;
     if (count < 0){
@@ -57,12 +60,13 @@ function goBackward() {
     displayer2.style.display = "block";
     displayer2.style.position = "absolute";
 
-    displayer.style.animation = "imageMove 2s forwards reverse";
-    displayer2.style.animation = "imageMove2 2s forwards reverse"; 
+    displayer.style.animation = "imageMove 1.5s forwards reverse";
+    displayer2.style.animation = "imageMove2 1.5s forwards reverse"; 
     setTimeout(() => {
         displayer.style.animation = "none";
         displayer2.style.animation = "none";
 
+        forward.disabled = false;
         backward.disabled = false;
-    }, 2000) 
+    }, 1350) 
 }
