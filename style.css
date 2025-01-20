@@ -61,5 +61,24 @@ main{
    height: 100%;
    max-height: 400px;
    object-fit: contain;
-   margin: 10px;
+}
+
+#imageContainer{
+    background-color: rgba(0, 0, 0, 0.374);
+    margin: 10px;
+    padding: 10px;
+
+    overflow: none;
+}
+
+
+
+
+@keyframes imageMove{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100px);
+    }
 }
