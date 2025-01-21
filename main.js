@@ -19,7 +19,8 @@ class ImageDisplay{
 const imageList = [
     new ImageDisplay("scr00000.jpg", ["Space"], "Picture of space"),
     new ImageDisplay("scr00001.jpg", ["Space"], "Picture of space"),
-    new ImageDisplay("scr00002.jpg", ["Space"], "View of the neighbhor")
+    new ImageDisplay("scr00002.jpg", ["Space"], "View of the neighbhor"),
+    new ImageDisplay("scr00003.jpg", ["Space"], "Sunset next to an open cluster")
 ]
 
 photoInfoText.innerText = imageList[0].info; //Set up in initialization
