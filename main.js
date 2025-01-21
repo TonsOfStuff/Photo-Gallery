@@ -4,6 +4,8 @@ const backward = document.getElementById("backward");
 const displayer = document.getElementById("displayer");
 const displayer2 = document.getElementById("displayer2");
 
+const photoInfoText = document.getElementById("infoText");
+
 
 //Construction of classes
 class ImageDisplay{
@@ -29,6 +31,12 @@ function goForward() {
     if (count > imageList.length - 1){
         count = 0;
     }
+
+
+
+
+
+
     displayer2.src = "photos/" + imageList[count].id
     displayer2.style.display = "block";
     displayer2.style.position = "absolute";
@@ -43,7 +51,7 @@ function goForward() {
 
         forward.disabled = false;
         backward.disabled = false;
-    }, 1350) 
+    }, 1400) 
     
 
 }
@@ -68,5 +76,5 @@ function goBackward() {
 
         forward.disabled = false;
         backward.disabled = false;
-    }, 1350) 
+    }, 1450) 
 }

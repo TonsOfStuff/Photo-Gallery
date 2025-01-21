@@ -29,6 +29,9 @@ header{
     border-radius: 20px;
     border: #6033ac solid 1.5px;
     padding: 10px;
+
+    background-color: #1d1130;
+    color: white;
 }
 
 #options{
@@ -40,6 +43,10 @@ header{
 main{
     padding: 15px;
 
+    
+}
+
+#photoGallery{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,13 +80,23 @@ main{
  }
 
 #imageContainer{
-    background-color: rgba(0, 0, 0, 0.374);
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
-
+    display: flex;
     position: relative;
     overflow: hidden;
     
+}
+
+#containerOverflow{
+    background-color: rgba(0, 0, 0, 0.374);
+    margin: 10px;
+}
+
+
+#photoInfo{
+    text-align: center;
+    color: white;
 }
 
 
@@ -97,9 +114,9 @@ main{
 
 @keyframes imageMove2{
     from{
-        transform: translate(-722px, -404px);
+        transform: translate(-722px, 0px);
     }
     to{
-        transform: translate(0px, -404px);
+        transform: translate(0px, 0px);
     }
 }
