@@ -19,8 +19,10 @@ class ImageDisplay{
 const imageList = [
     new ImageDisplay("scr00000.jpg", ["Space"], "Picture of space"),
     new ImageDisplay("scr00001.jpg", ["Space"], "Picture of space"),
-    new ImageDisplay("scr00002.jpg", ["Space"], "Picture of space")
+    new ImageDisplay("scr00002.jpg", ["Space"], "View of the neighbhor")
 ]
+
+photoInfoText.innerText = imageList[0].info; //Set up in initialization
 
 let count = 0;
 
@@ -32,7 +34,7 @@ function goForward() {
         count = 0;
     }
 
-
+    photoInfoText.innerText = imageList[count].info;
 
 
 
@@ -63,6 +65,13 @@ function goBackward() {
     if (count < 0){
         count = imageList.length - 1;
     }
+
+    photoInfoText.innerText = imageList[count].info;
+
+
+
+
+
     displayer2.src = displayer.src;
     displayer.src = "photos/" + imageList[count].id
     displayer2.style.display = "block";
@@ -76,5 +85,5 @@ function goBackward() {
 
         forward.disabled = false;
         backward.disabled = false;
-    }, 1450) 
+    }, 1500) 
 }
