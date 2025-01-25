@@ -22,7 +22,9 @@ const imageList = [
     new ImageDisplay("scr00002.jpg", ["Space"], "View of the neighbhor"),
     new ImageDisplay("scr00003.jpg", ["Space"], "Sunset next to an open cluster"),
     new ImageDisplay("scr00004.jpg", ["Space", "Orion"], "Life next to the Orion Nebula"),
-    new ImageDisplay("scr00005.jpg", ["Space", "Eclipse"], "Eclipse Eating into a moon")
+    new ImageDisplay("scr00005.jpg", ["Space", "Eclipse"], "Eclipse Eating into a moon"),
+    new ImageDisplay("scr00006.jpg", ["Space", "Planet"], "View of a gas giant"),
+    new ImageDisplay("scr00007.jpg", ["Space"], "Sunrise"),
 ]
 
 photoInfoText.innerText = imageList[0].info; //Set up in initialization
