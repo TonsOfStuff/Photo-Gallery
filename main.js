@@ -17,7 +17,7 @@ class ImageDisplay{
 }
 
 const imageList = [
-    new ImageDisplay("scr00000.jpg", ["Space"], "Picture of space"),
+    new ImageDisplay("scr00000.jpg", ["Space", "Rings"], "Picture of space"),
     new ImageDisplay("scr00001.jpg", ["Space"], "Picture of space"),
     new ImageDisplay("scr00002.jpg", ["Space"], "View of the neighbhor"),
     new ImageDisplay("scr00003.jpg", ["Space"], "Sunset next to an open cluster"),
@@ -25,6 +25,9 @@ const imageList = [
     new ImageDisplay("scr00005.jpg", ["Space", "Eclipse"], "Eclipse Eating into a moon"),
     new ImageDisplay("scr00006.jpg", ["Space", "Planet"], "View of a gas giant"),
     new ImageDisplay("scr00007.jpg", ["Space"], "Sunrise"),
+    new ImageDisplay("scr00008.jpg", ["Space", "Rings"], "Earth-like planet with rings"),
+    new ImageDisplay("scr00009.jpg", ["Space"], "View of the Galactic Center"),
+    new ImageDisplay("scr00010.jpg", ["Space"], "Starry skies behind a thin atmosphere")
 ]
 
 photoInfoText.innerText = imageList[0].info; //Set up in initialization
